@@ -1,5 +1,6 @@
 const { input1, input2, input3 } = require('./inputs');
 
+// Main Parser function (Used closure)
 const parser = pattern => {
     let split = pattern.split(',');
     
@@ -26,8 +27,10 @@ const output2 = parser(input2);
 
 const output3 = parser(input3);
 
+// Output Json 
 console.log(output3());
 
+// Pattern select function
 function decidePattern(p) {
     let result;
     if (p.indexOf('to') !== -1) {
@@ -40,6 +43,7 @@ function decidePattern(p) {
     return result;
 }
 
+// function which creates date between obj
 function createDateRange(d){
    const dateSplit = d.split('--to--');
    const obj = {
@@ -48,6 +52,7 @@ function createDateRange(d){
    return obj;
 }
 
+// function which creates  OR obj
 function createOrformat(v) {
     const orSplit = v.split('|');
     const obj = {
@@ -56,6 +61,7 @@ function createOrformat(v) {
     return obj;
 }
 
+// function which creates obj { "eq": value }
 function createNormalObj(v){
     const obj = {
         "eq": v
