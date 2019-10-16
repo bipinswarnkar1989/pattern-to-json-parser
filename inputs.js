@@ -1,15 +1,10 @@
-const input1 = `interview_attendance:P,intervie
-w_date:2019-04-15--to--2019-04-1
-5,status:CAP`;
+const input1 = `interview_attendance:P,interview_date:2019-04-15--to--2019-04-15,status:CAP`;
 
-const input2 = `status:all,applied_date:2019-04
--15--to--2019-04-15,screen_statu
-s:SR|NS`;
+const input2 = `status:all,applied_date:2019-04-15--to--2019-04-15,screen_status:SR|NS`;
 
-const input3 = `location:mumbai|delhi|pune,list
-_type:S,min_education:1`;
+const input3 = `location:mumbai|delhi|pune,list_type:S,min_education:1`;
 
-export {
+module.exports =  {
     input1,
     input2,
     input3
