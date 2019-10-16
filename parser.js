@@ -26,7 +26,7 @@ const output2 = parser(input2);
 
 const output3 = parser(input3);
 
-console.log(output1());
+console.log(output3());
 
 function decidePattern(p) {
     let result;
