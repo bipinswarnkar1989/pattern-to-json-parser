@@ -12,10 +12,13 @@ const parser = pattern => {
            let s = e.split(':');
            newAr.push([s[0], s[1]]);
        });
-      
        const obj = Object.assign({}, ...Array.from(newAr, ([k, v]) => ({[k]: decidePattern(v)}) ));;
-    
-       return obj;
+       
+       const and = {
+        "and": {...obj}
+       };
+
+       return JSON.stringify(and);
     }
      
     return result;
