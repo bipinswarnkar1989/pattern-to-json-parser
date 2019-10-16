@@ -9,3 +9,6 @@ node parser
 ```javascript
 const { input1, input2, input3 } = require('./inputs');
 ```
+
+### Requirements
+- NodeJs v10.16.3 
